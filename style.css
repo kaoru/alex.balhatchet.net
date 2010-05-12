@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 5px;
+
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #000;
+    background-color: #fff;
+}
+
+h1 {
+    margin: 0 0 15px 2px;
+    padding: 0 0 10px 0;
+    font-size: 2em;
+    font-weight: 800;
+    border-bottom: 1px dotted #00f;
+    color: #c33;
+}
+
+p {
+    margin: 0 0 0 2px;
+    padding: 0 0 15px 0;
+    font-size: 0.8em;
+}
+
+a {
+    color: #009;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00f;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #36f;
+}
+
+p a {
+    font-size: 1.4em;
+}
+
+.small {
+    margin: 0 0 0 2px;
+    padding: 0 0 8px 0;
+    font-size: 0.6em;
+    color: #666;
+}
+
+.small a {
+    font-size: 1em;
+}
+
+hr {
+    margin: 5px 0 10px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-bottom: 1px dotted #00f;
+}
