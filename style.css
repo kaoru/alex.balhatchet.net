@@ -56,6 +56,16 @@ hr {
     clear: both;
 }
 
+ul.list {
+    margin: 0 0 0 40px;
+    padding: 0;
+}
+
+ul.list li {
+    font-size: 0.9em;
+    list-style-type: square;
+}
+
 /* JQuery Tabs */
 
 div#tabs .tab {
