@@ -16,6 +16,14 @@ h1 {
     color: #c33;
 }
 
+h2 {
+    margin: 0 0 0 2px;
+    padding: 0 0 10px 0;
+    font-size: 1em;
+    font-weight: 800;
+    color: #36f;
+}
+
 p {
     margin: 0 0 0 2px;
     padding: 0 0 15px 0;
