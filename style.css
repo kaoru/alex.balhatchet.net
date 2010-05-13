@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    margin: 0 0 15px 2px;
+    margin: 0 0 0 2px;
     padding: 0 0 10px 0;
     font-size: 2em;
     font-weight: 800;
@@ -23,17 +23,13 @@ p {
 }
 
 a {
-    color: #009;
+    color: #36f;
     text-decoration: none;
 }
 
 a:hover {
     color: #00f;
     text-decoration: underline;
-}
-
-a:visited {
-    color: #36f;
 }
 
 p a {
@@ -52,20 +48,36 @@ p a {
 }
 
 hr {
-    margin: 5px 0 10px 0;
+    margin: 5px 0 10px 2px;
     padding: 0;
     height: 0;
     border: none;
     border-bottom: 1px dotted #00f;
+    clear: both;
 }
 
 /* JQuery Tabs */
-.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
-.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
-.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
+
+div#tabs .tab {
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 150%;
+    margin: 0;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.ui-tabs { position: relative; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0 }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; }
 .ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
 .ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
-.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
-.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color: #36f; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; color: #c33; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
 .ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; clear: both; }
 .ui-tabs .ui-tabs-hide { display: none !important; }
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover    a { color: #fff; background-color: #c33; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected  a { color: #36f; background-color: #fff; }
