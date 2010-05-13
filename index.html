@@ -48,9 +48,23 @@
             <div id="perl">
                 <h2>In the beginning</h2>
                 <p>I taught myself Perl in 2002 by reading the 2nd Edition of Learning Perl, by Tom Christiansen, Randal L. Schwartz. At the time I had just installed my first Linux distribution (Slackware, for the curious) and I was dying to try out some cool stuff on it, and my friend Adam suggested I try out this Perl language he'd been learning.</p>
-                <p></p>
-                <h2>Now</h2>
-                <p>...</p>
+                <p>At the time I mostly used Perl as a Bash-substitute - where most advanced Linux users would write out a quick for loop in Bash, I'd hack something together in Perl. Somewhere along the way I picked up <code>use strict;</code> and <code>use warnings;</code> and I think it's probably been at least 5 years since I wrote any Perl without them!</p>
+                <p>One of the first scripts I ever wrote was one that I still use today. I called it <code>checkperl.pl</code> and it looks like this:</p>
+                <p><code class='block'>
+#!/usr/bin/perl -w
+
+use strict;
+use warnings;
+
+my @files = @ARGV ? @ARGV : (glob('*.pl'), glob('*.pm'), glob('*.t'));
+
+foreach (@files) {
+    print `perl -cw $_`;
+}
+                </code></p>
+                <h2>Nestoria</h2>
+                <p>In 2006, between my 2nd and 3rd years of university, I did an internship for a start-up called Nestoria. At the time I joined their property search engine only showed properties for London, and I had to go back to uni just after we launched the whole of the UK. Nestoria was an excellent opportunity for me, not least because it helped me to push my Perl to the next level. The next few levels actually!</p>
+                <p>Believe it or not before I joined Nestoria I had never heard of the CPAN. Not only that I didn't know what a module was, so even core modules were unknown to me. By the end of my first week at Nestoria I was in love with <code>Data::Dumper</code>, <code>LWP::UserAgent</code>, and <code>Test::More</code>. By the end of my first month I'd written my own modules.</p>
                 <h2>The Future</h2>
                 <p>...</p>
             </div>

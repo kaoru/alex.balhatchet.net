@@ -74,6 +74,20 @@ ul.list li {
     list-style-type: square;
 }
 
+code {
+    color: #c60;
+}
+
+code.block {
+    display: block;
+    clear: both;
+    white-space: pre;
+    padding: 0 8px;
+    margin: 2px 0 2px 10px;
+    border: 1px dotted #00f;
+    width: 500px;
+}
+
 /* JQuery Tabs */
 
 div#tabs .tab {
