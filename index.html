@@ -38,15 +38,23 @@
             </ul>
             <hr>
             <div id="home">
-                <p>I'm currently working as a software engineer for <a href="http://www.nestoria.co.uk">Nestoria</a>, and loving it.</p>
-                <p>I'm a Perl hacker, so of course I have some <a href="http://search.cpan.org/~kaoru">CPAN</a> modules.</p>
-                <p>I switched from Windows to <a href="http://www.ubuntu.com/">Ubuntu Linux</a> and I haven't looked back.</p>
-                <p>I play a lot of <a href="http://www.dailymtg.com">Magic: The Gathering</a> with my friends.</p>
-                <p>My recently listened to music can be seen on <a href="http://www.last.fm/user/kaokun">Last.fm</a>.</p>
-                <p>You can even find me on this <a href="http://twitter.com/kaokun">Twitter</a> thing everyone's talking about.</p>
+                <p>I'm currently working as a software engineer for <a href="http://www.nestoria.co.uk" class="big">Nestoria</a>, and loving it.</p>
+                <p>I'm a Perl hacker, so of course I have some <a href="http://search.cpan.org/~kaoru" class="big">CPAN</a> modules.</p>
+                <p>I switched from Windows to <a href="http://www.ubuntu.com/" class="big">Ubuntu Linux</a> and I haven't looked back.</p>
+                <p>I play a lot of <a href="http://www.dailymtg.com" class="big">Magic: The Gathering</a> with my friends.</p>
+                <p>My recently listened to music can be seen on <a href="http://www.last.fm/user/kaokun" class="big">Last.fm</a>.</p>
+                <p>You can even find me on this <a href="http://twitter.com/kaokun" class="big">Twitter</a> thing everyone's talking about.</p>
             </div>
             <div id="perl">
-                <h2>In the beginning</h2>
+                <h2>Perl Projects</h2>
+                <h3>WebService::Nestoria::Search</h3>
+                <p><code>WebService::Nestoria::Search</code> is the Perl module for accessing the Nestoria public API.</p>
+                <p>You can find it on CPAN here: <a href='http://search.cpan.org/~kaoru/WebService-Nestoria-Search/'>http://search.cpan.org/~kaoru/WebService-Nestoria-Search/</a>.</p>
+                <h3>nocase</h3>
+                <p><code>nocase</code> is a learning exercise to help me delve into the Perl internals. It is supposed to be a pragma which makes variable names, hash keys, comparrison operations and regular expressions case insensitive. It doesn't work yet.</p>
+                <p>If you want to look at the source, you can check the <a href='http://github.com/kaoru/nocase'>nocase github repository</a>.</p>
+                <h2>My Perl Story</h2>
+                <h3>In the beginning</h3>
                 <p>I taught myself Perl in 2002 by reading the 2nd Edition of Learning Perl, by Tom Christiansen, Randal L. Schwartz. At the time I had just installed my first Linux distribution (Slackware, for the curious) and I was dying to try out some cool stuff on it, and my friend Adam suggested I try out this Perl language he'd been learning.</p>
                 <p>At the time I mostly used Perl as a Bash-substitute - where most advanced Linux users would write out a quick for loop in Bash, I'd hack something together in Perl. Somewhere along the way I picked up <code>use strict;</code> and <code>use warnings;</code> and I think it's probably been at least 5 years since I wrote any Perl without them!</p>
                 <p>One of the first scripts I ever wrote was one that I still use today. I called it <code>checkperl.pl</code> and it looks like this:</p>
@@ -62,12 +70,18 @@ foreach (@files) {
     print `perl -cw $_`;
 }
                 </code></p>
-                <h2>Nestoria</h2>
+                <h3>Nestoria</h3>
                 <p>In 2006, between my 2nd and 3rd years of university, I did an internship for a start-up called Nestoria. At the time I joined their property search engine only showed properties for London, and I had to go back to uni just after we launched the whole of the UK. Nestoria was an excellent opportunity for me, not least because it helped me to push my Perl to the next level. The next few levels actually!</p>
                 <p>Believe it or not before I joined Nestoria I had never heard of the CPAN. Not only that I didn't know what a module was, so even core modules were unknown to me. By the end of my first week at Nestoria I was in love with <code>Data::Dumper</code>, <code>LWP::UserAgent</code>, and <code>Test::More</code>, and by the end of my first month I'd written my own modules.</p>
                 <p>After my 3rd year of university I headed back to Nestoria and I've now been a full time software engineer for over 2 years.</p>
-                <h2>The Future</h2>
-                <p>...</p>
+                <h3>Learning</h3>
+                <p>There's always more to learn when it comes to Perl, and I want to know it all. On my list of things I want to learn I have...
+                <ul class='list'>
+                    <li>Template Toolkit</li>
+                    <li>Catalyst</li>
+                    <li>More internals stuff</li>
+                </ul>
+                </p>
             </div>
             <div id="linux">
                 <p>Penguin...</p>

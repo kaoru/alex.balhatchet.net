@@ -24,6 +24,14 @@ h2 {
     color: #36f;
 }
 
+h3 {
+    margin: 0 0 0 2px;
+    padding: 0 0 10px 0;
+    font-size: 0.8em;
+    font-weight: 800;
+    color: #36f;
+}
+
 p {
     margin: 0 0 0 2px;
     padding: 0 0 15px 0;
@@ -40,7 +48,7 @@ a:hover {
     text-decoration: underline;
 }
 
-p a {
+p a.big {
     font-size: 1.4em;
 }
 
@@ -70,7 +78,7 @@ ul.list {
 }
 
 ul.list li {
-    font-size: 0.9em;
+    font-size: 0.8em;
     list-style-type: square;
 }
 
