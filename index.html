@@ -3,7 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
 <!--    <base href='http://kaoru.slackwise.net/'> -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.lightbox-0.5.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <title>Kaoru.Slackwise.Net</title>
@@ -22,9 +23,11 @@
 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="tabs.js"></script>
-        <script type="text/javascript" src="konami.js"></script>
-        <script type="text/javascript" src="easter.js"></script>
+        <script type="text/javascript" src="js/tabs.js"></script>
+        <script type="text/javascript" src="js/konami.js"></script>
+        <script type="text/javascript" src="js/easter.js"></script>
+        <script type="text/javascript" src="js/jquery.lightbox-0.5.min.js"></script>
+        <script type="text/javascript" src="js/photos.js"></script>
     </head>
     <body>
         <h1>Alex Balhatchet</h1>
@@ -32,10 +35,10 @@
         <div id="tabs">
             <ul>
                 <li><a href="#home"    class="tab">Home</a></li>
+                <li><a href="#life"    class="tab">Life</a></li>
                 <li><a href="#perl"    class="tab">Perl</a></li>
                 <li><a href="#linux"   class="tab">Linux</a></li>
                 <li><a href="#mtg"     class="tab">MTG</a></li>
-                <li><a href="#photos"  class="tab">Photos</a></li>
                 <li><a href="#contact" class="tab">Contact Me</a></li>
             </ul>
             <hr>
@@ -47,6 +50,15 @@
                 <p>I play a lot of <a href="http://www.dailymtg.com" class="big">Magic: The Gathering</a> with my friends.</p>
                 <p>My recently listened to music can be seen on <a href="http://www.last.fm/user/kaokun" class="big">Last.fm</a>.</p>
                 <p>You can even find me on this <a href="http://twitter.com/kaokun" class="big">Twitter</a> thing everyone's talking about.</p>
+            </div>
+            <div id="life">
+                <p>I currently live in North East London with my wonderful fiancée Dotti.</p>
+                <p class='gallery'>
+                    <a href='photos/Alex_and_Dorothy_Mudgee.jpg' title='Alex and Dotti in Mudgee'><img src='photos/thumbs/Alex_and_Dorothy_Mudgee.jpg' alt='Alex and Dorothy in Mudgee'></a>
+                    <a href='photos/Alex_and_Dorothy_Dublin.jpg' title='Alex and Dotti in Dublin'><img src='photos/thumbs/Alex_and_Dorothy_Dublin.jpg' alt='Alex and Dorothy in Dublin'></a>
+                    <a href='photos/London_Eye.jpg' title='London Eye at Night'><img src='photos/thumbs/London_Eye.jpg' alt='London Eye at Night'></a>
+                    <a href='photos/London_Buses.jpg' title='London Buses'><img src='photos/thumbs/London_Buses.jpg' alt='London Buses'></a>
+                </p>
             </div>
             <div id="perl">
                 <h2>Perl Projects</h2>
@@ -74,9 +86,6 @@
             </div>
             <div id="mtg">
                 <p>MTG...</p>
-            </div>
-            <div id="photos">
-                <p>Photos...</p>
             </div>
             <div id="contact">
                 <p>I'm a pretty easy person to find online. Your best options are probably...</p>
