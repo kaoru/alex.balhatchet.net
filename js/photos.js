@@ -1,8 +1,8 @@
 $(function() {
-    $('.gallery a').lightBox(
-        {
+    $('.gallery').each(function() {
+        $(this).children('a').lightBox({
             txtImage:'Photo',
             txtOf:'/'
-        }
-    );
+        });
+    });
 });
