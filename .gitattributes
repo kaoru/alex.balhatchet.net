@@ -1,0 +1,5 @@
+cv-build            export-ignore
+.gitattributes      export-ignore
+.gitignore          export-ignore
+README              export-ignore
+build_and_launch.sh export-ignore
