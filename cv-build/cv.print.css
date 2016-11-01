@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 5px;
+
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #000;
+    background-color: #fff;
+
+    width: 800px;
+}
+
+h1 {
+    margin: 0 0 0 2px;
+    padding: 0 0 10px 0;
+    font-size: 3em;
+    font-weight: 800;
+    color: #c33;
+
+    border-bottom: 1px dotted #00f;
+}
+
+h2 {
+    margin: 0 0 0 2px;
+    padding: 0 0 14px 0;
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #36f;
+}
+
+h3 {
+    margin: 0 0 0 2px;
+    padding: 0 0 10px 0;
+    font-size: 0.8em;
+    font-weight: 800;
+    color: #36f;
+}
+
+p {
+    margin: 0 0 0 2px;
+    padding: 0 0 15px 0;
+    font-size: 0.8em;
+}
+
+a {
+    color: #36f;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00f;
+    text-decoration: underline;
+}
+
+hr {
+    margin: 10px 0 10px 2px;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-bottom: 1px dotted #00f;
+    clear: both;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+}
+
+table tr { margin: 0; padding: 0;}
+
+table tr td.left { margin: 0; padding: 0; width: 450px; }
+
+table tr td.right { margin: 0; padding: 0; width: 350px; }
+
+table tr td ul {
+    list-style-type: square;
+}
+
+table tr td ul li {
+    margin: 0;
+    padding: 0;
+}
+
+table tr td ul li p {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* contact-me */
+
+#contact-me {
+    margin: 0;
+    padding: 0;
+}
+
+#contact-me ul {
+    margin: 0;
+    padding: 8px 0 0 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#contact-me ul li {
+    display: inline-block;
+    width: 180px;
+}
+
+#contact-me ul li p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+}
+
+#contact-me ul li i {
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+}
+
+/* skills */
+
+#skills h2 {
+    margin: 0 0 0 2px;
+    padding: 0;
+}
+
+/* qualifications */
+
+#qualifications p {
+}
+
+/*  work-history */
+
+#work-history p.timeline {
+    font-weight: bold;
+    margin: 0 0 0 2px;
+    padding: 0;
+}
+
