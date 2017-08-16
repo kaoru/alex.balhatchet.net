@@ -141,3 +141,8 @@ div {
     padding: 0;
 }
 
+/* other awesomeness */
+
+#other-awesomeness p {
+    padding: 5px 0 0 0;
+}
