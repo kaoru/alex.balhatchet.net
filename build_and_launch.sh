@@ -17,8 +17,8 @@ wkhtmltopdf --quiet "cv-build/cv.html" "$TMPDIR/cv.pdf"
 
 echo "Releasing to alex.balhatchet.net"
 
-rsync -az $TMPDIR/.htaccess alexwww@alex.balhatchet.net:alex.balhatchet.net/
-rsync -az $TMPDIR/* alexwww@alex.balhatchet.net:alex.balhatchet.net/
+rsync -az $TMPDIR/.htaccess alexwww@ssh.alex.balhatchet.net:alex.balhatchet.net/
+rsync -az $TMPDIR/* alexwww@ssh.alex.balhatchet.net:alex.balhatchet.net/
 
 echo "Tidying up"
 
