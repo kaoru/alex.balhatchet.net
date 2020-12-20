@@ -15,6 +15,14 @@ echo "Bulding cv.pdf"
 
 wkhtmltopdf --quiet "cv-build/cv.html" "$TMPDIR/cv.pdf"
 
+echo "Rebuilding thumbnails"
+
+cd photos
+for f in *.jpg ; do
+  convert -resize x200 "$f" "thumbs/$f"
+done
+cd ..
+
 echo "Releasing to alex.balhatchet.net"
 
 rsync -az $TMPDIR/.htaccess alexwww@ssh.alex.balhatchet.net:alex.balhatchet.net/
