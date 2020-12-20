@@ -19,7 +19,7 @@ echo "Rebuilding thumbnails"
 
 cd photos
 for f in *.jpg ; do
-  convert -resize x200 "$f" "thumbs/$f"
+  convert -resize x200 "$f" "$TMPDIR/photos/thumbs/$f"
 done
 cd ..
 
