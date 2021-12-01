@@ -15,7 +15,7 @@ git archive --format=tar HEAD | (cd $TMPDIR ; tar xf - ; cd $GITDIR)
 
 echo "Bulding cv.pdf"
 
-wkhtmltopdf --quiet "cv-build/cv.html" "$TMPDIR/cv.pdf"
+wkhtmltopdf --enable-local-file-access --quiet "cv-build/cv.html" "$TMPDIR/cv.pdf"
 
 echo "Releasing to alex.balhatchet.net"
 
