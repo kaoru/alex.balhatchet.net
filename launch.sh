@@ -19,8 +19,8 @@ wkhtmltopdf --enable-local-file-access --quiet "cv-build/cv.html" "$TMPDIR/cv.pd
 
 echo "Releasing to alex.balhatchet.net"
 
-rsync -az $TMPDIR/.htaccess alexwww@rainbow.dreamhost.com:alex.balhatchet.net/
-rsync -az $TMPDIR/* alexwww@rainbow.dreamhost.com:alex.balhatchet.net/
+rsync -az $TMPDIR/.htaccess alexwww@ssh.balhatchet.net:alex.balhatchet.net/
+rsync -az $TMPDIR/* alexwww@ssh.balhatchet.net:alex.balhatchet.net/
 
 echo "Tidying up"
 
