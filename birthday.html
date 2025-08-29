@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang='en'>
+    <head>
+      <meta charset='UTF-8' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+      <script src='https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4'></script>
+      <title>Alex's 40th Birthday (and Reading flatwarming party)</title>
+
+      <script src='/js/confetti.js'></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          confetti.start();
+          setTimeout(function() { confetti.stop(); }, 3000);
+        });
+      </script>
+
+      <style type="text/tailwindcss">
+        @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+        @import "tailwindcss";
+
+        @theme {
+          --font-architects-daughter: "Architects Daughter", sans-serif;
+          --animate-bounce-short: bounce 500ms ease-in-out 4.5;
+        }
+      </style>
+    </head>
+    <body class='bg-emerald-600 font-architects-daughter'>
+      <div class='my-8'>
+        <h1 class='text-center text-white text-6xl md:text-7xl font-bold animate-bounce-short'>Alex's 40th Birthday</h1>
+        <h5 class='text-center text-white text-2xl md:text-3xl animate-bounce-short'>(and Reading flatwarming party)</h5>
+
+        <div class='bg-white m-8 py-4 px-8 text-black rounded-xl'>
+          <p class='text-2xl py-2 text-center md:text-left'>📆 🏡 👋 🎂</p>
+          <p class='py-2'><strong class='text-bold'>When?</strong> November Saturday 15th</p>
+          <p class='py-2'><strong class='text-bold'>Where?</strong> Reading, UK</p>
+          <p class='py-2'><strong class='text-bold'>I'd love to see you!</strong> Come for as much or as little as you can.</p>
+          <p class='py-2'><strong class='text-bold'>Let me know when you might be around!</strong> So I can make sure there’s enough food, drinks, and slices of cake!</p>
+        </div>
+
+        <div class='bg-white m-8 py-4 px-8 text-black rounded-xl'>
+          <p class='text-2xl py-2 text-center md:text-left'>☕️ 🍱 🎲 🍕 🍿 🎤</p>
+          <p class='py-2'><strong class='text-bold'>10:00 - 12:00</strong>&nbsp;&nbsp;&nbsp;Coffee and catching up </p>
+          <p class='py-2'><strong class='text-bold'>12:00 - 14:00</strong>&nbsp;&nbsp;&nbsp;Lunch</p>
+          <p class='py-2'><strong class='text-bold'>14:00 - 18:00</strong>&nbsp;&nbsp;&nbsp;Games and snacks</p>
+          <p class='py-2'><strong class='text-bold'>18:00 - 21:00</strong>&nbsp;&nbsp;&nbsp;Dinner</p>
+          <p class='py-2'><strong class='text-bold'>21:00 - 23:00</strong>&nbsp;&nbsp;&nbsp;Movie night <strong class='text-bold'>or</strong> Karaoke <strong class='text-bold'>???</strong></p>
+        </div>
+
+        <div class='bg-white m-8 py-4 px-8 text-black rounded-xl'>
+          <p class='text-2xl py-2 text-center md:text-left'>📧 💖 🥳</p>
+          <p class='py-4 text-center md:text-left'><a class='text-white bg-fuchsia-500 hover:bg-fuchsia-400 font-bold rounded-xl text-md px-10 py-3 focus:outline-none' href='https://docs.google.com/forms/d/e/1FAIpQLSdHy2IpJmJ7STyNI4JYKnY0wvvEtNq7Rjb8UBP1IqPEUiLx4g/viewform?usp=header' target='_blank'>RSVP</a></p>
+        </div>
+      </div>
+    </body>
+</html>
